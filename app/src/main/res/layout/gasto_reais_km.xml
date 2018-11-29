@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View style="@style/divider" />
+
+    <LinearLayout
+        style="@style/container_row">
+
+        <TextView
+            style="@style/header_title"
+            android:drawableLeft="@drawable/coin_icon"
+            android:text="@string/header_spent"/>
+
+    </LinearLayout>
+
+    <View style="@style/divider" />
+
+    <LinearLayout style="@style/container_row">
+
+        <LinearLayout style="@style/container_cell">
+
+            <TextView
+                android:id="@+id/tvGastoGasolinaPorKm"
+                style="@style/value_spent_footer"
+                android:text="@string/hint_value"/>
+
+            <TextView
+                style="@style/label_spent_footer"
+                android:text="@string/gasolina"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/container_cell">
+
+            <TextView
+                android:id="@+id/tvGastoAlcoolPorKm"
+                style="@style/value_spent_footer"
+                android:text="@string/hint_value"/>
+
+            <TextView
+                style="@style/label_spent_footer"
+                android:text="@string/etanol"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

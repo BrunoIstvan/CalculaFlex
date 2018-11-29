@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View style="@style/divider" />
+
+    <LinearLayout style="@style/container_row">
+
+        <TextView
+            style="@style/header_title"
+            android:drawableLeft="@drawable/car_icon"
+            android:text="Consumo Médio"/>
+
+    </LinearLayout>
+
+    <View style="@style/divider" />
+
+    <LinearLayout style="@style/container_row">
+
+        <LinearLayout style="@style/container_cell">
+
+            <TextView style="@style/header_subtitle"
+                android:text="Km/L Gasolina"/>
+
+            <EditText
+                style="@style/edit_average"
+                android:id="@+id/edtConsumoGasolina" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/container_cell">
+
+            <TextView
+                style="@style/header_subtitle"
+                android:text="Km/L Etanol"/>
+
+            <EditText
+                style="@style/edit_average"
+                android:id="@+id/edtConsumoAlcool" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

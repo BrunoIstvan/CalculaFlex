@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View style="@style/divider" />
+
+    <LinearLayout
+        style="@style/container_row">
+
+        <TextView
+            style="@style/header_title"
+            android:drawableLeft="@drawable/fuel_icon"
+            android:text="@string/header_gas_station"/>
+
+    </LinearLayout>
+
+    <View style="@style/divider" />
+
+    <LinearLayout style="@style/container_row">
+
+        <LinearLayout style="@style/container_cell">
+
+            <TextView
+                style="@style/header_subtitle"
+                android:text="@string/header_gasoline_price"/>
+
+            <EditText
+                style="@style/edit_price"
+                android:id="@+id/edtPrecoGasolina"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/container_cell">
+
+            <TextView
+                style="@style/header_subtitle"
+                android:text="@string/header_etanol_price"/>
+
+            <EditText
+                style="@style/edit_price"
+                android:id="@+id/edtPrecoAlcool" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
